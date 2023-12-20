@@ -9,6 +9,20 @@
 		#phel {
 			display: none
 		}
+
+		@keyframes color-change {
+			0% {
+				color: red;
+			}
+
+			50% {
+				color: blue;
+			}
+
+			100% {
+				color: red;
+			}
+		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
 	<script>
@@ -16,11 +30,16 @@
 			$("#text").hover(function () {
 				$("#phel").fadeIn();
 				$("#example1").css('background-image', 'url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)');
-				$("#example1").css('background-size', '150px')
+				$("#example1").css('background-size', '150px');
+				$("#ext").css({
+					fontFamily: 'monospace',
+					fontSize: '3em',
+					animation: 'color-change 1s infinite'
+
+				})
 			},
 				function () {
 					$("#phel").fadeOut();
-					$("#example1").css('background-image','none')
 				}
 			)
 		})
@@ -37,5 +56,4 @@
 	</center>
 </body>
 
-</html>
 </html>
