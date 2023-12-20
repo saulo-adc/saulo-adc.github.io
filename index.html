@@ -6,6 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+		#slugcat1 {
+			float: left;
+			width: 200px;
+			height: 50px;
+			visibility: hidden;
+		}
+
+		#slugcat2 {
+			float: left;
+			width: 200px;
+			height: 50px;
+			visibility: hidden;
+		}
+
+		#slugcat3 {
+			float: right;
+			width: 200px;
+			height: 50px;
+			visibility: hidden;
+		}
+
+		#slugcat4 {
+			float: right;
+			width: 200px;
+			height: 50px;
+			visibility: hidden;
+		}
+
 
 		#text {
 			background-color: aliceblue;
@@ -117,6 +145,12 @@
 					$("#phel").fadeOut();
 				}
 			)
+			$("#slugbutton").click(function () {
+				$("#slugcat1").css('visibility', 'visible');
+				$("#slugcat2").css('visibility', 'visible');
+				$("#slugcat3").css('visibility', 'visible');
+				$("#slugcat4").css('visibility', 'visible');
+			})
 		})
 	</script>
 </head>
@@ -133,7 +167,13 @@
 					src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
 			</div>
 		</div>
+
+		<button id="slugbutton">Surpresa</button>
 	</center>
+	<img id="slugcat1" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
+	<img id="slugcat2" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
+	<img id="slugcat3" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
+	<img id="slugcat4" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
 </body>
 
 </html>
