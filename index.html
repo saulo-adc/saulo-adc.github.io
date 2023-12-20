@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+
+		#text {
+			background-color: aliceblue;
+		}
+		
 		#phel {
 			display: none
 		}
@@ -14,6 +19,72 @@
 			font-family: monospace;
 			font-size: 3em;
 			animation: color-change 1s infinite
+		}
+
+		#background {
+			background: linear-gradient(270deg, #ff0000, #ff5c00, #e3ff00, #00ff20, #1c00ff, #dc00ff, #dc00ff);
+			background-size: 1400% 1400%;
+
+			-webkit-animation: bichona 3s ease infinite;
+			-moz-animation: bichona 3s ease infinite;
+			-o-animation: bichona 3s ease infinite;
+			animation: bichona 3s ease infinite;
+		}
+
+		@-webkit-keyframes bichona {
+			0% {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		@-moz-keyframes bichona {
+			0% {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		@-o-keyframes bichona {
+			0% {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		@keyframes bichona {
+			0% {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+
+			100% {
+				background-position: 0% 50%
+			}
 		}
 
 		@keyframes color-change {
@@ -51,10 +122,13 @@
 
 <body>
 	<center>
-		<div>
-			<p id="text">aphelios gaming</p>
+		<div id="background">
+			<div id="text">
+				<p id="text-p">aphelios gaming</p>
+			</div>
 			<div id="example1">
-				<img id="phel" src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
+				<img id="phel"
+					src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
 			</div>
 		</div>
 	</center>
