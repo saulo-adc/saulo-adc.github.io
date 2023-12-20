@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	#phel{
+			display:none
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+	<script>
+		$(document).ready(function () {
+			$("#text").hover(function () {
+				$("#phel").fadeIn();
+			},
+				function () {
+					$("#phel").fadeOut();
+				}
+			)
+		})
+	</script>
+</head>
+
+<body>
+	<center>
+		<p id="text">aphelios gaming</p>
+		<img id="phel"
+			src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
+	</center>
+</body>
+
+</html>
