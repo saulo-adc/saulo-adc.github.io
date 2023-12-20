@@ -15,12 +15,12 @@
 		$(document).ready(function () {
 			$("#text").hover(function () {
 				$("#phel").fadeIn();
-				$("body").css('background-image','url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)');
-				$("body").css('background-size', '150px')
+				$("#example1").css('background-image', 'url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)');
+				$("#example1").css('background-size', '150px')
 			},
 				function () {
 					$("#phel").fadeOut();
-					$("body").css('background-image','none');
+					$("#example1").css('background-image','none')
 				}
 			)
 		})
@@ -29,10 +29,13 @@
 
 <body>
 	<center>
-		<p id="text">aphelios gaming</p>
-		<img id="phel"
-			src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
+		<div id="example1">
+			<p id="text">aphelios gaming</p>
+			<img id="phel"
+				src="https://prod.api.assets.riotgames.com/public/v1/asset/lol/13.24.1/CHAMPION_SKIN/523018/ICON">
+		</div>
 	</center>
 </body>
 
+</html>
 </html>
