@@ -94,11 +94,8 @@
 				}
 			)
 			$("#slugbutton").click(function () {
-				$("#slugcat1").css('visibility', 'visible');
-				$("#slugcat2").css('visibility', 'visible');
-				$("#slugcat3").css('visibility', 'visible');
-				$("#slugcat4").css('visibility', 'visible');
 				$("body").css('background-image','url(\'https://farm4.static.flickr.com/3085/3696756949_e0e201813c_o.jpg\')')
+				$("#slug-div").append('<img src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif"/>');
 			})
 		})
 	</script>
@@ -119,10 +116,8 @@
 
 		<button id="slugbutton">Surpresa</button>
 	</center>
-	<img id="slugcat1" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
-	<img id="slugcat2" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
-	<img id="slugcat3" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
-	<img id="slugcat4" src="https://media.tenor.com/673e8CiiRYUAAAAM/pink-slugcat.gif">
+	<div id="slug-div">
+	</div>
 </body>
 
 </html>
