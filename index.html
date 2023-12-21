@@ -53,15 +53,15 @@
 			background: linear-gradient(270deg, #ff0000, #ff5c00, #e3ff00, #00ff20, #1c00ff, #dc00ff, #dc00ff);
 			background-size: 1400% 1400%;
 
-			-webkit-animation: bichona 3s ease infinite;
-			-moz-animation: bichona 3s ease infinite;
-			-o-animation: bichona 3s ease infinite;
-			animation: bichona 3s ease infinite;
+			-webkit-animation: arcoiris 3s ease infinite;
+			-moz-animation: arcoiris 3s ease infinite;
+			-o-animation: arcoiris 3s ease infinite;
+			animation: arcoiris 3s ease infinite;
 			width: 100%;
 			height: 100%;
 		}
 
-		@-webkit-keyframes bichona {
+		@-webkit-keyframes arcoiris {
 			0% {
 				background-position: 0% 50%
 			}
@@ -75,7 +75,7 @@
 			}
 		}
 
-		@-moz-keyframes bichona {
+		@-moz-keyframes arcoiris {
 			0% {
 				background-position: 0% 50%
 			}
@@ -89,7 +89,7 @@
 			}
 		}
 
-		@-o-keyframes bichona {
+		@-o-keyframes arcoiris {
 			0% {
 				background-position: 0% 50%
 			}
@@ -103,7 +103,7 @@
 			}
 		}
 
-		@keyframes bichona {
+		@keyframes arcoiris {
 			0% {
 				background-position: 0% 50%
 			}
@@ -135,6 +135,7 @@
 	<script>
 		$(document).ready(function () {
 			$("#text").hover(function () {
+				$("#text-p").text('aphelios gaming');
 				$("#phel").fadeIn();
 				$("#example1").css({
 					backgroundImage: 'url(https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FAphelios_9.jpg&w=1200&q=75)',
@@ -142,6 +143,7 @@
 				});
 			},
 				function () {
+					$("#text-p").text('passe o mouse por cima de mim');
 					$("#phel").fadeOut();
 				}
 			)
@@ -160,7 +162,7 @@
 	<center>
 		<div id="background">
 			<div id="text">
-				<p id="text-p">aphelios gaming</p>
+				<p id="text-p">passe o mouse por cima de mim</p>
 			</div>
 			<div id="example1">
 				<img id="phel"
