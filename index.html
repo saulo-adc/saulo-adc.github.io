@@ -49,18 +49,6 @@
 			animation: color-change 1s infinite
 		}
 
-		body {
-			background: linear-gradient(270deg, #ff0000, #ff5c00, #e3ff00, #00ff20, #1c00ff, #dc00ff, #dc00ff);
-			background-size: 1400% 1400%;
-
-			-webkit-animation: arcoiris 3s ease infinite;
-			-moz-animation: arcoiris 3s ease infinite;
-			-o-animation: arcoiris 3s ease infinite;
-			animation: arcoiris 3s ease infinite;
-			width: 100%;
-			height: 100%;
-		}
-
 		@-webkit-keyframes arcoiris {
 			0% {
 				background-position: 0% 50%
@@ -152,6 +140,7 @@
 				$("#slugcat2").css('visibility', 'visible');
 				$("#slugcat3").css('visibility', 'visible');
 				$("#slugcat4").css('visibility', 'visible');
+				$("body").css('background-image','url(\'https://farm4.static.flickr.com/3085/3696756949_e0e201813c_o.jpg\')')
 			})
 		})
 	</script>
